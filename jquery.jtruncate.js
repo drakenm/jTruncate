@@ -41,7 +41,7 @@
 					var ellipsis = $('.truncate_ellipsis', obj);
 					moreLink.click(function() {
 						if(moreLink.text() == options.moreText) {
-							moreContent.show(options.moreAni);
+							moreContent.show(options.moreAni).css("display", "inline");
 							moreLink.text(options.lessText);
 							ellipsis.css("display", "none");
 						} else {
